@@ -4,24 +4,48 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Signika+Negative:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Landing page</title>
+    <!-- scrips -->
+    <script src="https://kit.fontawesome.com/1d0cc8531f.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header id="header">
-        <img src="" alt="" id="header-img">
+        <img src="source/coffe-website-favicon-color.png" alt="Coffe logo" class="logo-img" id="header-img">
         <nav id="nav-bar">
-            <ul>
-                <a class="nav-link" href=""></a>
-                <a class="nav-link" href=""></a>
-                <a class="nav-link" href=""></a>
+            <ul class="nav-link-container">
+                <a class="nav-link" href="">INFO</a>
+                <a class="nav-link" href="">PRICE</a>
+                <a class="nav-link" href="">ABOUT</a>
             </ul>
         </nav>
-        <main>
-            <form action="" id="form">
-                <input type="email" name="" id="email">
-                <input type="submit" value="" id="submit">
-            </form>
-        </main>
     </header>
+    <main>
+        <p class="lema">El sitio preferido para los amantes del cafe</p>
+        <form action="" id="form">
+            <input type="email" name="" id="email" placeholder="Ingrese su correo electronico">
+            <input type="submit" value="Un cafe por favor!" id="submit">
+        </form>
+        <div class="info-container">
+            <div class="info">
+                <i class="fa-solid fa-mug-saucer"></i>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet obcaecati, neque officia quia debitis tempore cumque ipsum consectetur ratione nulla reprehenderit quidem quam excepturi recusandae quos veritatis totam facere maxime.</p>
+            </div>
+            <div class="info">
+                <i class="fa-solid fa-store"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit dicta vel fuga vitae odio odit commodi, ipsa eius at itaque! Iste amet hic porro, minus atque corrupti id autem odit!</p>
+            </div>
+            <div class="info">
+                <i class="fa-solid fa-star"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eligendi illum odit, delectus quam sequi commodi debitis rerum quidem voluptatibus impedit dolore ullam. Harum soluta beatae eaque optio hic ab?</p>
+            </div>
+        </div>
+        <video src="source/pexels-kelly-2909914-960x506-24fps.mp4" autoplay controls loop></video>
+    </main>
   </body>
 </html>
