@@ -20,15 +20,15 @@
         <nav id="nav-bar">
             <ul class="nav-link-container">
                 <a class="nav-link" href="#main">INFO</a>
-                <a class="nav-link" href="">PRICE</a>
-                <a class="nav-link" href="">ABOUT</a>
+                <a class="nav-link" href="#card-container">PRICE</a>
+                <a class="nav-link" href="#footer">ABOUT</a>
             </ul>
         </nav>
     </header>
     <main id="main">
         <p class="lema">El sitio preferido para los amantes del cafe</p>
-        <form action="" id="form">
-            <input type="email" name="" id="email" placeholder="Ingrese su correo electronico">
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+            <input type="email" name="email" id="email" placeholder="Ingrese su correo electronico">
             <input type="submit" value="Un cafe por favor!" id="submit">
         </form>
         <div class="info-container">
@@ -45,8 +45,8 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate eligendi illum odit, delectus quam sequi commodi debitis rerum quidem voluptatibus impedit dolore ullam. Harum soluta beatae eaque optio hic ab?</p>
             </div>
         </div>
-        <video src="source/pexels-kelly-2909914-960x506-24fps.mp4" autoplay controls loop sound="off"></video>
-        <div class="card-container">
+        <video src="source/pexels-kelly-2909914-960x506-24fps.mp4" autoplay controls loop sound="off" id="video"></video>
+        <div class="card-container" id="card-container">
             <div class="card">
                 <h3 class="card-title">Basic</h3>
                 <p class="card-price">20$</p>
@@ -83,7 +83,7 @@
         </div>  
     </main>
   </body>
-  <footer>
+  <footer id="footer">
     <p>Created by Armando Diaz</p>
   </footer>
 </html>
