@@ -29,7 +29,8 @@ header {
   width: 100%;
   position: sticky;
   top: 0;
-  background-color: #ffdec3;
+  border-bottom: 10px solid #924f1b;
+  background-color: white;
   justify-content: space-between;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, .3);
 }
@@ -148,7 +149,8 @@ video {
     text-align: center;
     align-items: center;
     padding: 5px;
-    margin-bottom: 40px
+    margin-bottom: 40px;
+    border-bottom: 3px solid #924f1b;
 }
 
 .info>p{
@@ -160,6 +162,81 @@ video {
 i{
     font-size: 1.5cm;
     color: #924f1b;
+}
+
+/* Card */
+.card-container{
+    margin: auto;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+    transition: 3s;
+}
+
+
+.card{
+    display: flex;
+    width: 250px;
+    height: 460px;
+    flex-direction: column;
+    border: 5px solid #924f1b;
+    border-radius: 10px;
+    align-items: center;
+    margin: 0px 20px;
+    transition: .3s;
+}
+
+.card:hover{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
+    width: 280px
+}
+
+.card-title{
+    background-color: #924f1b;
+    width: 100%;
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+}
+
+.card-price{
+    color: rgb(113, 63, 17);
+    text-align: center;
+    width: 100%;
+    font-weight: 900;
+    font-size: xx-large;
+    padding: 2px 0px 2px 0px;
+    background-color: #ffdbc1;
+    border-bottom: 3px solid #924f1b;
+}
+
+.card-info{
+    list-style-position: inside;
+    width: 100%;
+    text-indent: 7px;
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.card-info>li{
+    font-size: x-large;
+}
+
+footer{
+    background-color: #924f1b;
+    height: 100px;
+    align-items: center;
+}
+
+footer>p{
+    color: white;
+    font-size: large;
+    text-align: center;
 }
 
 /* Responsive web design */
@@ -202,5 +279,18 @@ i{
 
   .info-container{
     width: 90%;
+  }
+
+  .card-container{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card{
+    margin: 20px 0px;
+  }
+
+  .card-info{
+    flex-direction: column;
   }
 }
