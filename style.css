@@ -131,6 +131,7 @@ form > input {
 /* video */
 video {
   width: 550px;
+  z-index: -1;
 }
 
 /* Info container */
